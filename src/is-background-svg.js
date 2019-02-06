@@ -7,10 +7,6 @@ module.exports = {
      * @return Boolean
      */
     isBackgroundSVG(decVal) {
-        let isBackgroundSVG = false;
-        if (decVal.indexOf('data:image/svg+xml') !== -1) {
-            isBackgroundSVG = true;
-        }
-        return isBackgroundSVG;
+        return decVal.indexOf('data:image/svg+xml') !== -1;
     }
 };
